@@ -6,8 +6,8 @@
 				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</Console>
 		<RollingFile name="LogToFile"
-			fileName="/mnt/8EFED7B1FED79037/UBUNTU-BACKUP/Desktop/ag-mw-logs/temp.log"
-			filePattern="/mnt/8EFED7B1FED79037/UBUNTU-BACKUP/Desktop/ag-mw-logs/archive/ag_mw_log-%d{yyyy-MM-dd}_%i.log"
+			fileName="/mnt/8EFED7B1FED79037/UBUNTU-BACKUP/Desktop/ag-mw-logs/mqtt.log"
+			filePattern="/mnt/8EFED7B1FED79037/UBUNTU-BACKUP/Desktop/ag-mw-logs/archive/mqtt-%d{yyyy-MM-dd}_%i.log"
 			ignoreExceptions="false">
 			<PatternLayout>
 				<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>

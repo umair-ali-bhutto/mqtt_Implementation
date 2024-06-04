@@ -43,22 +43,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
-		
-		<!-- ADDED BY UMAIR FOR QR 6-11-23 -->
-		<dependency>
-   			<groupId>com.google.zxing</groupId>
-    		<artifactId>core</artifactId>
-    		<version>3.4.0</version> <!-- Use the latest version available -->
-		</dependency>
-		<dependency>
-    		<groupId>com.google.zxing</groupId>
-    		<artifactId>javase</artifactId>
-    		<version>3.4.0</version> <!-- Use the latest version available -->
-		</dependency>
-		<!-- /ADDED BY UMAIR FOR QR 6-11-23 -->
-		
-		
-		
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j2</artifactId>
@@ -73,6 +59,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -86,25 +74,8 @@
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc8</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20210307</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpclient</artifactId>
-		</dependency>
 
-		<dependency>
-			<groupId>joda-time</groupId>
-			<artifactId>joda-time</artifactId>
-			<version>2.10.12</version>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
@@ -113,200 +84,6 @@
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
 			<!--scope>runtime</scope> -->
-		</dependency>
-
-		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt</artifactId>
-			<version>0.9.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.googlecode.json-simple</groupId>
-			<artifactId>json-simple</artifactId>
-			<version>1.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.axis</groupId>
-			<artifactId>axis</artifactId>
-			<version>1.4</version>
-		</dependency>
-
-		<dependency>
-			<groupId>javax.xml</groupId>
-			<artifactId>jaxrpc-api</artifactId>
-			<version>1.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.joyent.util</groupId>
-			<artifactId>fast-md5</artifactId>
-			<version>2.7.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-activemq</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-broker</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
-		<dependency>
-			<groupId>com.opencsv</groupId>
-			<artifactId>opencsv</artifactId>
-			<version>3.3</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.11.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>net.sf.jasperreports</groupId>
-			<artifactId>jasperreports</artifactId>
-			<version>6.17.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>
-			<version>2.4.0</version><!--$NO-MVN-MAN-VER$-->
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-		<!-- Version Conflicts Occured While Creating EXCEL through jasperReports 
-			UPDATED from 3.11 to 4.1.2 by UMAIR -->
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>4.1.2</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
-		<!-- Version Conflicts Occured While Creating EXCEL through jasperReports 
-			UPDATED from 3.11 to 4.1.2 by UMAIR -->
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>4.1.2</version>
-		</dependency>
-		<!-- NEW DEPENDENCY ADDED DUE TO CONFLICT OF POI-OOXML by umair -->
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-compress</artifactId>
-			<version>1.21</version>
-		</dependency>
-		<!-- NEW DEPENDENCY ADDED DUE TO CONFLICT OF POI-OOXML by umair -->
-		<dependency>
-			<groupId>org.apache.xmlbeans</groupId>
-			<artifactId>xmlbeans</artifactId>
-			<version>3.1.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>wsdl4j</groupId>
-			<artifactId>wsdl4j</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>commons-discovery</groupId>
-			<artifactId>commons-discovery</artifactId>
-			<version>0.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.codehaus.groovy</groupId>
-			<artifactId>groovy</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-api</artifactId>
-			<version>2.18.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>2.18.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>cn.apiclub.tool</groupId>
-			<artifactId>simplecaptcha</artifactId>
-			<version>1.2.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jpos</groupId>
-			<artifactId>jpos</artifactId>
-			<version>2.1.0</version>
-			<exclusions>
-				<exclusion>
-					<groupId>commons-cli</groupId>
-					<artifactId>commons-cli</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.sleepycat</groupId>
-					<artifactId>je</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>jdbm</groupId>
-					<artifactId>jdbm</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache-extras.beanshell</groupId>
-					<artifactId>bsh</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.sshd</groupId>
-					<artifactId>sshd-core</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.bouncycastle</groupId>
-					<artifactId>bcprov-jdk15on</artifactId>
-				</exclusion>
-
-
-				<exclusion>
-					<groupId>org.hdrhistogram</groupId>
-					<artifactId>HdrHistogram</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.javassist</groupId>
-					<artifactId>javassist</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.javatuples</groupId>
-					<artifactId>javatuples</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.jdom</groupId>
-					<artifactId>jdom2</artifactId>
-				</exclusion>
-
-
-				<exclusion>
-					<groupId>org.jdom</groupId>
-					<artifactId>jdom2</artifactId>
-				</exclusion>
-
-				<exclusion>
-					<groupId>org.osgi</groupId>
-					<artifactId>org.osgi.core</artifactId>
-				</exclusion>
-
-				<exclusion>
-					<groupId>org.jline</groupId>
-					<artifactId>jline</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
 
@@ -319,20 +96,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-
-			<!-- <plugin> <groupId>org.wildfly.plugins</groupId> <artifactId>wildfly-maven-plugin</artifactId> 
-				<version>2.0.2.Final</version> <executions> <execution> <phase>install</phase> 
-				<goals> <goal>deploy</goal> </goals> </execution> </executions> <configuration> 
-				<filename>${project.build.finalName}.war</filename> <hostname>127.0.0.1</hostname> 
-				<port>9990</port> <username>anwar</username> <password>Access123+</password> 
-				</configuration> </plugin> -->
-
-
-			<!-- <plugin> <groupId>org.glassfish</groupId> <artifactId>maven-embedded-glassfish-plugin</artifactId> 
-				<version>3.0-74b</version> <configuration> <goalPrefix>embedded-glassfish</goalPrefix> 
-				<app>${project.build.finalName}.war</app> <port>8080</port> <contextRoot>AG-MW</contextRoot> 
-				<autoDelete>true</autoDelete> </configuration> <executions> <execution> <phase>install</phase> 
-				<goals> <goal>run</goal> </goals> </execution> </executions> </plugin> -->
 
 		</plugins>
 	</build>

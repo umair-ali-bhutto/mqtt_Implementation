@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+	<Appenders>
+		<Console name="LogToConsole" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+		<RollingFile name="LogToFile"
+			fileName="/mnt/8EFED7B1FED79037/UBUNTU-BACKUP/Desktop/ag-mw-logs/temp.log"
+			filePattern="/mnt/8EFED7B1FED79037/UBUNTU-BACKUP/Desktop/ag-mw-logs/archive/ag_mw_log-%d{yyyy-MM-dd}_%i.log"
+			ignoreExceptions="false">
+			<PatternLayout>
+				<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="500KB" />
+			</Policies>
+
+			<DefaultRolloverStrategy compressionLevel="0"
+				max="100" />
+			<!-- Set Max Number of File need to be created on server. It is max=100 
+				yet -->
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.ag" level="debug" additivity="false">
+			<AppenderRef ref="LogToFile" />
+			<AppenderRef ref="LogToConsole" />
+		</Logger>
+		<Logger name="com.ag" level="info" additivity="false">
+			<AppenderRef ref="LogToFile" />
+			<AppenderRef ref="LogToConsole" />
+		</Logger>
+		 
+		  
+	   <Logger name="com.ag" level="debug" additivity="false">
+			<AppenderRef ref="LogToFile" />
+			<AppenderRef ref="LogToConsole" />
+		</Logger>
+		
+		
+
+		<Logger name="org.springframework.boot" level="error"
+			additivity="false">
+			<AppenderRef ref="LogToConsole" />
+		</Logger>
+		<Root level="error">
+			<AppenderRef ref="LogToFile" />
+			<AppenderRef ref="LogToConsole" />
+		</Root>
+	</Loggers>
+</Configuration>

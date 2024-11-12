@@ -1,4 +1,4 @@
-package com.ag.pos.controller;
+package com.ag.controller;
 
 import javax.servlet.http.HttpServletRequest;
 

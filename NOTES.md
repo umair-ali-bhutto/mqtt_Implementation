@@ -106,7 +106,7 @@ Here’s how you can modify the process to ensure the SAN is included, resolving
 
 1. **Create a configuration file for OpenSSL** (e.g., `server_san.cnf`) with SAN information:
 
-   ```plaintext
+```plaintext
    [ req ]
    distinguished_name = req_distinguished_name
    req_extensions = v3_req
@@ -127,7 +127,7 @@ Here’s how you can modify the process to ensure the SAN is included, resolving
 
 2. **Generate the server key and certificate with SAN**:
 
-   ```bash
+```bash
    keytool -genkeypair -alias testserver -keyalg RSA -keystore serverkeystore.jks -dname "CN=testserver" -ext "SAN=IP:172.191.1.223"
    ```
 
@@ -135,7 +135,7 @@ Here’s how you can modify the process to ensure the SAN is included, resolving
 
 3. **Export the Server Certificate with SAN**:
 
-   ```bash
+```bash
    keytool -export -alias testserver -keystore serverkeystore.jks -file testserver.crt
    ```
 
@@ -157,7 +157,7 @@ Here’s how you can modify the process to ensure the SAN is included, resolving
 
    Use the following command to verify that the SAN has been correctly included in `testserver.crt`:
 
-   ```bash
+```bash
    keytool -printcert -file testserver.crt
    ```
 
@@ -167,7 +167,7 @@ Here’s how you can modify the process to ensure the SAN is included, resolving
 
    Make sure the broker configuration (`moquette.conf`) points to `serverkeystore.jks` and the correct password values:
 
-   ```plaintext
+```plaintext
    jks_path = path/to/serverkeystore.jks
    key_store_password = your_keystore_password
    key_manager_password = your_key_manager_password

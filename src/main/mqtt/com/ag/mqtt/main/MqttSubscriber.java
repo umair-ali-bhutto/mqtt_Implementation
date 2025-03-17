@@ -18,7 +18,7 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 public class MqttSubscriber {
 	public static void main(String[] args) throws Exception {
 		String brokerUrl = "ssl://172.191.1.223:8886";
-		String topic = "test";
+		String topic = "/test";
 		String clientId = "mqtt-client";
 		String username = "ag-test";
 		String password = "ag-test";
@@ -26,6 +26,7 @@ public class MqttSubscriber {
 		@SuppressWarnings("resource")
 		MqttClient client = new MqttClient(brokerUrl, clientId);
 		MqttConnectOptions options = new MqttConnectOptions();
+		options.setCleanSession(true);
 		options.setUserName(username);
 		options.setPassword(password.toCharArray());
 		options.setSocketFactory(createSslSocketFactory(

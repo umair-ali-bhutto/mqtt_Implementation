@@ -125,6 +125,15 @@ public class MqttBrokerConfig {
 		mqttBroker.startServer(new MemoryConfig(brokerProperties));
 		AgLogger.logInfo("MQTT Broker started on port: " + brokerProperties.getProperty("port") + " ssl_port: "
 				+ brokerProperties.getProperty("ssl_port"));
+		
+		////temp
+		////To Test Subscriber
+//		try {
+//			new MqttSubscriber().main(null);
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 
 	/**
